@@ -7,54 +7,92 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <div style="position: absolute;">
+        <a href="./opcao.html">
+            <img src="../image/voltar.png" style="width: 5rem; background-color: rgb(255, 255, 255,0.2);"  alt="">
+        </a>
+    </div>
     <main id="opcao">
             <img src="../image/cadastro.jpg"  class="img_tipoCadastro" alt="">
         <div class="tipo">
             <div class="formCadastroPaciente">
                 <!--informações gerais-->
                 <div>
-                    <h2>Nome do Paciente</h2>
-                    <input type="text">
-                    <h2>Data de Nascimento</h2>
-                    <input type="text">
-                    <h2>CPF</h2>
-                    <input type="text">
-                    <div>
-                        Paciente é uma criança? <input type="checkbox">
+                    <div class="infoPaciente">
+                        <h2>Nome do Paciente</h2>
                     </div>
-                    <h2>Nome do Responsavel</h2>
-                    <input type="text">
-                    <h2>CPF do Responsasvel</h2>
-                    <input type="text">
+                    <div class="infoPaciente">
+                        <input type="text" id="nomePaciente" placeholder="Digite o seu nome completo">
+                    </div>
+                    <div class="infoPaciente">
+                        <h2>Data de Nascimento</h2>
+                    </div>
+                    <div class="infoPaciente">
+                        <input type="date" id="data" placeholder="Digite sua data de nascimento" max="2023-11-23">
+                    </div>
+                    <div class="infoPaciente">
+                        <h2>CPF</h2>
+                    </div>
+                    <div class="infoPaciente">
+                        <input type="text" maxlength="14" id="input_cpf" placeholder="Digite seu cpf">
+                    </div>                    
+                    <div class="infoPaciente">
+                        <h3>Paciente é uma criança?</h3> <input id="chk_pacienteCrianca" type="checkbox" >
+                    </div>
+                    <div class="infoPaciente">
+                        <h2>Nome do Responsavel</h2>
+                    </div>
+                    <div class="infoPaciente">
+                        <input type="text" id="RespPaciente" disabled placeholder="Digite o nome completo do Responsavel">
+                    </div>
+                    <div class="infoPaciente">
+                        <h2>CPF do Responsasvel</h2>
+                    </div>
+                    <div class="infoPaciente">
+                        <input type="text" disabled id="cpfResponsavel" placeholder="Digite o cpf do Responsavel">
+                    </div>
                 </div>
                 <!--informações de idoso-->
                 <div>
-                    <input type="checkbox"> Você é idoso:
-                    <div>
-                        Toma algum medicamento? <input type="checkbox"> 
+                    <div class="infoPaciente">
+                        <h3>Você é idoso:</h3><input id="idoso" type="checkbox">
                     </div>
-                    <input type="textarea">
-                    <div>
-                        Tem problemas cardiacos? <input type="checkbox"> 
+                    <div class="infoPaciente">
+                        Toma algum medicamento? <input disabled id="chk_medicamento" type="checkbox"> 
                     </div>
-                    <input type="text">
-                    <div>
-                        Fez algum tipo de cirurgia? <input type="checkbox"> 
+                    <div class="infoPaciente">
+                        <input type="text" disabled id="medicamentoPaciente" placeholder="Caso sim, digite o nome do remedio">
                     </div>
-                    <input type="text">
-                    <div>
-                        Tem pressao alta? <input type="checkbox">
+                    <div class="infoPaciente">
+                        Fez algum tipo de cirurgia? <input id="chk_cirurgia" disabled type="checkbox"> 
                     </div>
-                    <div style="margin-top: 0;">
-                        Tem Colesterol alta? <input type="checkbox">
+                    <div class="infoPaciente">
+                        <input type="text" disabled id="input_cirurgia" placeholder="Caso sim, digite qual cirurgia realizou">
                     </div>
-                    <div style="margin-top: 0;">
-                        Tem Diabete? <input type="checkbox">
+                    <div class="infoPaciente">
+                        <label for="input_pressaoAlta">Tem pressao alta?</label> <input id="input_pressaoAlta" disabled type="checkbox" name="pressao">
+                    </div>
+                    <div style="margin-top: 0;" class="infoPaciente">
+                        <label for="input_colesterol">Tem Colesterol alta?</label><input disabled id="input_colesterol" type="checkbox">
+                    </div>
+                    <div style="margin-top: 0;" class="infoPaciente">
+                        <label for="input_diabete">Tem Diabete?</label><input id="input_diabete" disabled type="checkbox">
+                    </div>
+                    <div style="margin-top: 0;" class="infoPaciente">
+                        <label for="input_prob_cardiaco">Tem problemas cardiacos?</label><input id="input_prob_cardiaco" disabled type="checkbox">
+                    </div>
+                    <div style="margin-top: 2rem;" class="infoPaciente">
+                        <h2>Senha</h2>
+                    </div>
+                    <div style="margin-top: 0;" class="infoPaciente">
+                        <input type="text" id="senhaPaciente" placeholder="Digite a sua senha">
                     </div>
                 </div>
             </div>
-            <a href="#" class="salvarPaciente">Cadastrar</a>
+            <a href="../index.html" id="salvarPaciente" class="salvarP">Cadastrar</a>
         </div>
     </main>
+    <script src="../js/campoFiltroPaciente.js"></script>
+    <script src="../js/cadastroPaciente.js"></script>
 </body>
 </html>

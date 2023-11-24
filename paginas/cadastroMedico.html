@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div style="position: absolute;">
+        <a href="./opcao.html">
+            <img src="../image/voltar.png" style="width: 5rem; background-color: rgb(255, 255, 255,0.2);"  alt="">
+        </a>
+    </div>
+    <main id="opcao">
+            <img src="../image/cadastro.jpg"  class="img_tipoCadastro" alt="">
+        <div class="tipo2">
+            <div id="cardFormMedico">
+                <div class="formCadastroMedico">
+                    <h2>Nome do Medico</h2>
+                    <input type="text" id="nomeMedico" placeholder="Digite seu nome completo">
+                    <h2>Data de Nascimento</h2>
+                    <input type="date" id="dataMedico" placeholder="Digite sua data de nascimento" max="2023-11-23">
+                    <h2>CPF</h2>
+                    <input type="text" maxlength="11" id="cpfMedico" placeholder="Digite seu CPF">
+                    <h2>Codigo do medico</h2>
+                    <input type="text" max="12" id="codigoMedico" placeholder="Digite seu codigo">
+                    <h2>Senha</h2>
+                    <input type="text" id="senhaMedico" placeholder="Digite sua senha">
+                </div>
+                <a href="../index.html" id="salvarMedico" class="salvarPaciente">Cadastrar</a>
+            </div>
+        </div>
+    </main>
+    <script src="../js/cadastroMedico.js"></script>
+</body>
+</html>
