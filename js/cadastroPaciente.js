@@ -15,8 +15,6 @@ function atualizar(){
 function cadastrarPaciente(){
     const nome  = document.querySelector('#nomePaciente').value
     var cpf  = document.querySelector('#input_cpf').value
-    const responsavel  = document.querySelector('#RespPaciente').value
-    const cpfResponsavel = document.querySelector('#cpfResponsavel').value
     const medicamento = document.querySelector('#medicamentoPaciente').value
     const cirurgia = document.querySelector('#input_cirurgia').value
     const senha = document.querySelector('#senhaPaciente').value
@@ -63,13 +61,6 @@ function cadastrarPaciente(){
     }else{
         prob_Cardiaco ="nao"
     }
-
-    if (responsavel ===""){
-        responsavel == "";
-    }
-    if (cpfResponsavel ===""){
-        cpfResponsavel == "";
-    }
     if (medicamento ===""){
         medicamento == "";
     }
@@ -83,8 +74,6 @@ function cadastrarPaciente(){
         senha,
         data_de_aniversario,
         cpf,
-        responsavel,
-        cpfResponsavel,
         medicamento,
         cirurgia,
         colesterol,

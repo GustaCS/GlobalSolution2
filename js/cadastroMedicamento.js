@@ -57,10 +57,10 @@ function apagar(id){
     atualizar()
 }
 
-document.querySelector("#buscaMedico").addEventListener("keyup",()=>{
-    let busca = document.querySelector("#buscaMedico").value
+document.querySelector("#busca").addEventListener("keyup",()=>{
+    let busca = document.querySelector("#busca").value
     let recFiltradas=receitas.filter((pac)=>{
-        return pac.medicoNome.toLowerCase().includes(busca.toLowerCase())
+        return pac.nome.toLowerCase().includes(busca.toLowerCase())
     })
 
     filtrar(recFiltradas)
@@ -109,7 +109,6 @@ function createCard(pacients){
             <div>
             <p style="font-weight: bold; display:inline-block">Horario ultimo remedio:</p>
             <p class="card-text" style="display:inline-block">${pacients.horario}</p>
-            
             <div>
                 <p style="font-weight: bold; display:inline-block">Horario proximo remedio:</p>
                 <p class="card-text" style="display:inline-block">${pacients.horarioProximoRemedio}</p>

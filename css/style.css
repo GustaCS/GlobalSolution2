@@ -168,11 +168,13 @@
 
 .formCadastroPaciente{
     width: 52vw;
-    margin: 0 auto;
-    height: 85vh;
+    margin-right: auto;
+    margin-left: auto;
+    height: 55vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-top: 12rem;
 }
 .formCadastroPaciente *{
     font-size: 35px;
@@ -220,7 +222,7 @@
 }
 
 .tipo a{
-    width: 50rem;
+    width: 40rem;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
